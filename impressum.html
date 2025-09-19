@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum - 9Planets</title>
+  <meta name="description" content="Impressum von 9Planets Music Label - Rechtliche Angaben und Kontaktdaten">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop playsinline>
+      <source src="/src/assets/videos/background.mp4" type="video/mp4">
+      <div class="video-fallback"></div>
+    </video>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+      <div class="nav-container">
+        <div class="logo">
+          <!-- Logo entfernt aus Navigation -->
+        </div>
+        <ul class="nav-menu">
+          <li><a href="/">← Zurück zur Hauptseite</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Impressum Section -->
+    <section class="impressum-section">
+      <div class="container">
+        <div class="glass-panel impressum-content">
+          <h1 class="impressum-title">IMPRESSUM</h1>
+          <p class="impressum-date">(Stand: 19.09.2025)</p>
+
+          <div class="impressum-block">
+            <h2>Anbieter und Verantwortlicher</h2>
+            <p><strong>9Planets – Independent Music Label</strong></p>
+            <p>Rechtsform: Einzelunternehmen</p>
+            <p>Vertretungsberechtigt: Michael H. Boehm (Inhaber)</p>
+            <p>Im Vogelgesang 43<br>
+            67346 Speyer<br>
+            Deutschland</p>
+          </div>
+
+          <div class="impressum-block">
+            <h2>Kontakt</h2>
+            <p><strong>Telefon:</strong> 0175-5224020</p>
+            <p><strong>E-Mail:</strong> <a href="mailto:mboehm63@gmail.com" class="impressum-link">mboehm63@gmail.com</a></p>
+          </div>
+
+          <div class="impressum-block">
+            <h2>Verbraucherstreitbeilegung</h2>
+            <p>(§ 36 VSBG, falls B2C-Verträge)</p>
+            <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+          </div>
+
+          <div class="impressum-block">
+            <h2>Optionale Angaben</h2>
+            <p><strong>Labelcode (GVL):</strong> LC 103453</p>
+          </div>
+
+          <div class="impressum-back">
+            <a href="/" class="btn-primary">← Zurück zur Hauptseite</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-panel">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span>9Planets - Sound Beyond Gravity</span>
+          </div>
+          <div class="footer-links">
+            <a href="/impressum.html">Impressum</a>
+            <a href="/datenschutz.html">Datenschutz</a>
+          </div>
+        </div>
+        <p class="footer-copyright">
+          &copy; 2025 9Planets - Sound Beyond Gravity
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <style>
+    .impressum-section {
+      padding: 120px 0 80px 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      z-index: 2;
+    }
+
+    .impressum-content {
+      padding: 3rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .impressum-title {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #ffffff, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 2px;
+    }
+
+    .impressum-date {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+    }
+
+    .impressum-block {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .impressum-block:last-of-type {
+      border-bottom: none;
+      margin-bottom: 3rem;
+    }
+
+    .impressum-block h2 {
+      color: #6366f1;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+
+    .impressum-block p {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 0.8rem;
+    }
+
+    .impressum-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .impressum-link {
+      color: #a78bfa;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .impressum-link:hover {
+      color: #ffffff;
+    }
+
+    .impressum-back {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 12px 32px;
+      background: #6366f1;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background: #5855eb;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .impressum-content {
+        padding: 2rem;
+      }
+
+      .impressum-title {
+        font-size: 2.5rem;
+      }
+
+      .impressum-section {
+        padding: 100px 0 60px 0;
+      }
+    }
+  </style>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
