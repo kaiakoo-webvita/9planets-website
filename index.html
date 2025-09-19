@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>9Planets - Sound Beyond Gravity</title>
+  <meta name="description" content="9Planets Music Label - Sound Beyond Gravity. Innovative electronic music from the depths of the universe.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop playsinline>
+      <source src="/src/assets/videos/background.mp4" type="video/mp4">
+      <div class="video-fallback"></div>
+    </video>
+
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+      <button class="lang-btn active" data-lang="de">DE</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+      <div class="nav-container">
+        <div class="logo">
+          <!-- Logo entfernt aus Navigation -->
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" data-i18n="nav.about">Über uns</a></li>
+          <li><a href="#artists" data-i18n="nav.artists">Künstler</a></li>
+          <li><a href="#releases" data-i18n="nav.releases">Releases</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content glass-panel">
+        <div class="hero-logo-container">
+          <img src="/src/assets/images/logo.png" alt="9Planets Logo" class="hero-logo">
+        </div>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Sound Beyond Gravity</p>
+        <p class="hero-description" data-i18n="hero.description">
+          Entdecke Musik, die Grenzen überschreitet. 9Planets bringt dir innovative Klänge aus den Tiefen des Universums direkt in dein Herz.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary" data-i18n="hero.listen">Musik hören</button>
+          <button class="btn-secondary" data-i18n="hero.discover">Entdecken</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="glass-panel">
+          <h2 data-i18n="about.title">Über 9Planets</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p data-i18n="about.mission">
+                9Planets versteht Musik als universelle Sprache, die Welten verbindet. Wir sind eine Plattform für experimentelle und emotionale Klangwelten, die Grenzen überschreiten.
+              </p>
+              <p data-i18n="about.vision">
+                Unsere Vision ist es, Künstlern einen Raum zu geben, in dem Kreativität, Innovation und Authentizität im Mittelpunkt stehen.
+              </p>
+            </div>
+            <div class="about-stats glass-panel">
+              <div class="stat">
+                <span class="stat-number">1</span>
+                <span class="stat-label" data-i18n="about.artist">Künstler</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">Coming</span>
+                <span class="stat-label" data-i18n="about.releases">Soon</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">9</span>
+                <span class="stat-label" data-i18n="about.planets">Planeten</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artists Section -->
+    <section id="artists" class="artists-section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="artists.title">Künstler</h2>
+        <div class="artists-grid">
+          <div class="artist-card glass-panel">
+            <div class="artist-image">
+              <div class="artist-placeholder">🎵</div>
+            </div>
+            <div class="artist-info">
+              <h3>Sir Aaron Dawn</h3>
+              <p>Dein Sound - Deine Reise</p>
+              <p>Ambient / Electronic / Trance / Cinematic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Releases Section -->
+    <section id="releases" class="releases-section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="releases.title">Releases</h2>
+        <div class="releases-grid">
+          <!-- Release Card 1 -->
+          <div class="release-card glass-panel">
+            <div class="release-cover">
+              <div class="release-placeholder">🚀</div>
+              <div class="play-overlay">
+                <button class="play-btn">▶</button>
+              </div>
+            </div>
+            <div class="release-info">
+              <h3>Coming Soon</h3>
+              <p>9Planets</p>
+              <p class="release-date">2025</p>
+            </div>
+          </div>
+
+          <!-- Release Card 2 -->
+          <div class="release-card glass-panel">
+            <div class="release-cover">
+              <div class="release-placeholder">🌌</div>
+              <div class="play-overlay">
+                <button class="play-btn">▶</button>
+              </div>
+            </div>
+            <div class="release-info">
+              <h3>Coming Soon</h3>
+              <p>9Planets</p>
+              <p class="release-date">2025</p>
+            </div>
+          </div>
+
+          <!-- Release Card 3 -->
+          <div class="release-card glass-panel">
+            <div class="release-cover">
+              <div class="release-placeholder">🪐</div>
+              <div class="play-overlay">
+                <button class="play-btn">▶</button>
+              </div>
+            </div>
+            <div class="release-info">
+              <h3>Coming Soon</h3>
+              <p>9Planets</p>
+              <p class="release-date">2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="glass-panel">
+          <h2 data-i18n="contact.title">Kontakt</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3 data-i18n="contact.getInTouch">Kontakt aufnehmen</h3>
+              <p data-i18n="contact.description">
+                Hast du Fragen oder möchtest du mit mir kollaborieren?
+              </p>
+              <div class="contact-links">
+                <a href="mailto:info@9planets.com" class="contact-link">
+                  📧 info@9planets.com
+                </a>
+                <a href="#" class="contact-link">
+                  📱 Instagram
+                </a>
+                <a href="#" class="contact-link">
+                  🎵 SoundCloud
+                </a>
+                <a href="#" class="contact-link">
+                  🎧 Spotify
+                </a>
+                <a href="#" class="contact-link">
+                  🍎 Apple Music
+                </a>
+              </div>
+            </div>
+            <form class="contact-form glass-panel">
+              <input type="text" placeholder="Name" required>
+              <input type="email" placeholder="E-Mail" required>
+              <textarea placeholder="Nachricht" rows="5" required></textarea>
+              <button type="submit" class="btn-primary" data-i18n="contact.send">Senden</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-panel">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span>9Planets - Sound Beyond Gravity</span>
+          </div>
+          <div class="footer-links">
+            <a href="#" data-i18n="footer.imprint">Impressum</a>
+            <a href="#" data-i18n="footer.privacy">Datenschutz</a>
+          </div>
+        </div>
+        <p class="footer-copyright">
+          &copy; 2025 9Planets - Sound Beyond Gravity
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
