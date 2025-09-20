@@ -10,20 +10,19 @@ const translations = {
     'nav.releases': 'Releases',
     'nav.contact': 'Kontakt',
     'hero.subtitle': 'Sound Beyond Gravity',
-    'hero.description': 'Entdecke Musik, die Grenzen überschreitet. 9Planets bringt dir innovative Klänge aus den Tiefen des Universums direkt in dein Herz.',
+    'hero.description': 'Musik für offene Räume und innere Reisen.<br>9Planets verbindet elektronische Klänge zu einer eigenen Erzählung.',
     'hero.listen': 'Musik hören',
     'hero.discover': 'Entdecken',
     'about.title': 'Über 9Planets',
-    'about.mission': '9Planets versteht Musik als universelle Sprache, die Welten verbindet. Wir sind eine Plattform für experimentelle und emotionale Klangwelten, die Grenzen überschreiten.',
-    'about.vision': 'Unsere Vision ist es, Künstlern einen Raum zu geben, in dem Kreativität, Innovation und Authentizität im Mittelpunkt stehen.',
-    'about.artist': 'Künstler',
-    'about.releases': 'Soon',
-    'about.planets': 'Planeten',
+    'about.mission': 'Für uns ist Musik eine universelle Sprache, die verbindet. Wir veröffentlichen elektronische Musik, die offen ist für das Emotionale, das Experimentelle, das Unerwartete. Dabei liegt unser Fokus auf Sounds, die sich entfalten dürfen – jenseits von Formeln, nah am klanglichen Ausdruck.',
+    'about.experimental': 'Ansatz',
+    'about.emotional': 'Fokus',
+    'about.authentic': 'Ausdruck',
     'artists.title': 'Künstler',
     'releases.title': 'Releases',
     'contact.title': 'Kontakt',
     'contact.getInTouch': 'Kontakt aufnehmen',
-    'contact.description': 'Hast du Fragen oder möchtest du mit mir kollaborieren?',
+    'contact.description': 'Hast Du Fragen oder Interesse an einer Zusammenarbeit?',
     'contact.send': 'Senden',
     'footer.imprint': 'Impressum',
     'footer.privacy': 'Datenschutz'
@@ -35,23 +34,22 @@ const translations = {
     'nav.releases': 'Releases',
     'nav.contact': 'Contact',
     'hero.subtitle': 'Sound Beyond Gravity',
-    'hero.description': 'Discover music that transcends boundaries. 9Planets brings you innovative sounds from the depths of the universe straight to your heart.',
+    'hero.description': 'Music for open spaces and inner journeys.<br>9Planets connects electronic sounds into a unique narrative.',
     'hero.listen': 'Listen to Music',
     'hero.discover': 'Discover',
     'about.title': 'About 9Planets',
-    'about.mission': '9Planets understands music as a universal language that connects worlds. We are a platform for experimental and emotional soundscapes that transcend boundaries.',
-    'about.vision': 'Our vision is to give artists a space where creativity, innovation and authenticity are at the center.',
-    'about.artist': 'Artist',
-    'about.releases': 'Soon',
-    'about.planets': 'Planets',
+    'about.mission': 'For us, music is a universal language that connects. We release electronic music that is open to the emotional, the experimental, the unexpected. Our focus is on sounds that are allowed to unfold – beyond formulas, close to sonic expression.',
+    'about.experimental': 'Approach',
+    'about.emotional': 'Focus',
+    'about.authentic': 'Expression',
     'artists.title': 'Artists',
     'releases.title': 'Releases',
     'contact.title': 'Contact',
     'contact.getInTouch': 'Get in Touch',
-    'contact.description': 'Do you have questions or would you like to collaborate with me?',
+    'contact.description': 'Do you have questions or are you interested in collaboration?',
     'contact.send': 'Send',
-    'footer.imprint': 'Imprint',
-    'footer.privacy': 'Privacy'
+    'footer.imprint': 'Legal Notice',
+    'footer.privacy': 'Privacy Policy'
   }
 };
 
@@ -66,8 +64,33 @@ document.addEventListener('DOMContentLoaded', function() {
   initializeSmoothScrolling();
   initializeNavigation();
   initializeContactForm();
-  initializeAnimations();
-  initializePlayButtons();
+// Video Background mit sanftem Loop
+function initializeVideoBackground() {
+  const video = document.querySelector('.background-video');
+  
+  if (video) {
+    // Ensure video is muted for autoplay
+    video.muted = true;
+    
+    // Sanfter Loop-Übergang
+    video.addEventListener('ended', () => {
+      video.currentTime = 0;
+      video.play();
+    });
+    
+    // Handle video load errors
+    video.addEventListener('error', () => {
+      console.log('Video failed to load, using fallback background');
+      document.body.style.background = 'linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)';
+    });
+    
+    // Optimize video for mobile
+    if (window.innerWidth <= 768) {
+      video.style.display = 'none';
+      document.body.style.background = 'linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)';
+    }
+  }
+}
 });
 
 // Sprachumschaltung
