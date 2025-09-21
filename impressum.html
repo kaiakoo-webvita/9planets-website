@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>9Planets - Sound Beyond Gravity</title>
-  <meta name="description" content="9Planets Music Label - Sound Beyond Gravity. Innovative electronic music from the depths of the universe.">
+  <title>Impressum - 9Planets</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
   <div id="app">
@@ -18,180 +18,57 @@
       <div class="video-fallback"></div>
     </video>
 
-    <!-- Language Toggle -->
-    <div class="language-toggle">
-      <button class="lang-btn active" data-lang="de">DE</button>
-      <button class="lang-btn" data-lang="en">EN</button>
-    </div>
-
     <!-- Navigation -->
     <nav class="glass-nav">
       <div class="nav-container">
         <div class="logo">
-          <!-- Logo entfernt aus Navigation -->
+          <a href="/">9Planets</a>
         </div>
         <ul class="nav-menu">
-          <li><a href="#home" data-i18n="nav.home">Home</a></li>
-          <li><a href="#about" data-i18n="nav.about">Über uns</a></li>
-          <li><a href="#artists" data-i18n="nav.artists">Künstler</a></li>
-          <li><a href="#releases" data-i18n="nav.releases">Releases</a></li>
-          <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#about">Über uns</a></li>
+          <li><a href="/#artists">Künstler</a></li>
+          <li><a href="/#releases">Releases</a></li>
+          <li><a href="/#contact">Kontakt</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-      <div class="hero-content glass-panel">
-        <div class="hero-logo-container">
-          <img src="/src/assets/images/logo.png" alt="9Planets Logo" class="hero-logo">
-        </div>
-        <p class="hero-subtitle" data-i18n="hero.subtitle" style="color: white !important; text-transform: uppercase !important; font-weight: 600 !important; letter-spacing: 2px !important;">SOUND BEYOND GRAVITY</p>
-        <p class="hero-description" data-i18n="hero.description">
-          Musik für offene Räume und innere Reisen. 9Planets verbindet elektronische Klänge zu einer eigenen Erzählung.
-        </p>
-        <div class="hero-buttons">
-          <a href="#releases" class="btn-primary" data-i18n="hero.listen">Musik hören</a>
-          <a href="https://music.apple.com/de/artist/sir-aaron-dawn/1632434815" target="_blank" class="btn-secondary" data-i18n="hero.discover">Entdecken</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
+    <!-- Main Content -->
+    <main class="legal-page">
       <div class="container">
         <div class="glass-panel">
-          <h2 data-i18n="about.title">Über 9Planets</h2>
-          <div class="about-content">
-            <div class="about-text">
-              <p data-i18n="about.mission">
-                Für uns ist Musik eine universelle Sprache, die verbindet. Wir veröffentlichen elektronische Musik, die offen ist für das Emotionale, das Experimentelle, das Unerwartete. Dabei liegt unser Fokus auf Sounds, die sich entfalten dürfen – jenseits von Formeln, nah am klanglichen Ausdruck.
-              </p>
-            </div>
-            <div class="about-stats glass-panel">
-              <div class="stat">
-                <span class="stat-number">Experimentell</span>
-                <span class="stat-label" data-i18n="about.experimental">Ansatz</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">Emotional</span>
-                <span class="stat-label" data-i18n="about.emotional">Fokus</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">Authentisch</span>
-                <span class="stat-label" data-i18n="about.authentic">Ausdruck</span>
-              </div>
-            </div>
+          <h1>Impressum</h1>
+          <p class="legal-date">(Stand: 19.09.2025)</p>
+          
+          <section class="legal-section">
+            <h2>Anbieter und Verantwortlicher (§ 5 DDG)</h2>
+            <p>
+              Michael H. Boehm, tätig als freischaffender Künstler (Freiberufler)<br>
+              auftretend unter: „9Planets – Independent Music Label" (Marke/Projekt)<br>
+              Im Vogelgesang 43, 67346 Speyer, Deutschland<br>
+              E-Mail: <a href="mailto:mboehm63@gmail.com">mboehm63@gmail.com</a>
+            </p>
+          </section>
+
+          <section class="legal-section">
+            <h2>Verbraucherstreitbeilegung (§ 36 VSBG)</h2>
+            <p>
+              Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+          </section>
+
+          <section class="legal-section">
+            <h2>GVL-Labelcode</h2>
+            <p>LC 103453</p>
+          </section>
+
+          <div class="back-link">
+            <a href="/" class="btn-secondary">← Zurück zur Website</a>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Artists Section -->
-    <section id="artists" class="artists-section">
-      <div class="container">
-        <h2 class="section-title" data-i18n="artists.title">Künstler</h2>
-        <div class="artists-grid">
-          <div class="artist-card glass-panel">
-            <div class="artist-image">
-              <div class="artist-placeholder">🎵</div>
-            </div>
-            <div class="artist-info">
-              <h3>Sir Aaron Dawn</h3>
-              <p>Dein Sound - Deine Reise</p>
-              <p>Ambient / Electronic / Trance / Cinematic</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Releases Section -->
-    <section id="releases" class="releases-section">
-      <div class="container">
-        <h2 class="section-title" data-i18n="releases.title">Releases</h2>
-        <div class="releases-grid">
-          <!-- Release Card 1 - EPs zu Apple Music Singles -->
-          <a href="https://music.apple.com/de/artist/sir-aaron-dawn/1632434815?see-all=singles" target="_blank" class="release-card glass-panel">
-            <div class="release-cover">
-              <div class="release-placeholder">🎵</div>
-              <div class="play-overlay">
-                <button class="play-btn">▶</button>
-              </div>
-            </div>
-            <div class="release-info">
-              <h3>EP's</h3>
-              <p>Published by 9Planets</p>
-            </div>
-          </a>
-
-          <!-- Release Card 2 - Alben zu Apple Music Alben -->
-          <a href="https://music.apple.com/de/artist/sir-aaron-dawn/1632434815?see-all=albums" target="_blank" class="release-card glass-panel">
-            <div class="release-cover">
-              <div class="release-placeholder">💿</div>
-              <div class="play-overlay">
-                <button class="play-btn">▶</button>
-              </div>
-            </div>
-            <div class="release-info">
-              <h3>Alben</h3>
-              <p>Published by 9Planets</p>
-            </div>
-          </a>
-
-          <!-- Release Card 3 - Continued Mixes zu Spotify -->
-          <a href="https://open.spotify.com/intl-de/artist/0vSZ3syFRnoT0i3jpGKXjX" target="_blank" class="release-card glass-panel">
-            <div class="release-cover">
-              <div class="release-placeholder">🎛️</div>
-              <div class="play-overlay">
-                <button class="play-btn">▶</button>
-              </div>
-            </div>
-            <div class="release-info">
-              <h3>Continued Mixes</h3>
-              <p>Published by 9Planets</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <div class="glass-panel">
-          <h2 data-i18n="contact.title">Kontakt</h2>
-          <div class="contact-content">
-            <div class="contact-info">
-              <h3 data-i18n="contact.getInTouch">Kontakt aufnehmen</h3>
-              <p data-i18n="contact.description">
-                Hast Du Fragen oder Interesse an einer Zusammenarbeit?
-              </p>
-              <div class="contact-links">
-                <a href="mailto:info@9planets.com" class="contact-link">
-                  📧 info@9planets.com
-                </a>
-                <a href="https://soundcloud.com/aaron-dawn" target="_blank" class="contact-link">
-                  🎵 SoundCloud
-                </a>
-                <a href="https://open.spotify.com/intl-de/artist/0vSZ3syFRnoT0i3jpGKXjX" target="_blank" class="contact-link">
-                  🎧 Spotify
-                </a>
-                <a href="https://music.apple.com/de/artist/sir-aaron-dawn/1632434815" target="_blank" class="contact-link">
-                  🍎 Apple Music
-                </a>
-              </div>
-            </div>
-            <form class="contact-form glass-panel">
-              <input type="text" placeholder="Name" required>
-              <input type="email" placeholder="E-Mail" required>
-              <textarea placeholder="Nachricht" rows="5" required></textarea>
-              <button type="submit" class="btn-primary" data-i18n="contact.send">Senden</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer glass-panel">
@@ -201,8 +78,8 @@
             <span>9Planets - Sound Beyond Gravity</span>
           </div>
           <div class="footer-links">
-            <a href="/impressum.html" data-i18n="footer.imprint">Impressum</a>
-            <a href="/datenschutz.html" data-i18n="footer.privacy">Datenschutz</a>
+            <a href="/impressum.html">Impressum</a>
+            <a href="/datenschutz.html">Datenschutz</a>
           </div>
         </div>
         <p class="footer-copyright">
@@ -212,6 +89,77 @@
     </footer>
   </div>
 
-  <script type="module" src="/src/main.js"></script>
+  <style>
+    .legal-page {
+      margin-top: 100px;
+      padding: 40px 20px;
+      min-height: calc(100vh - 200px);
+    }
+
+    .legal-page h1 {
+      color: white;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .legal-date {
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      margin-bottom: 40px;
+      font-style: italic;
+    }
+
+    .legal-section {
+      margin-bottom: 15px;
+    }
+
+    .legal-section h2 {
+      color: white;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 8px;
+    }
+
+    .legal-section p {
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .legal-section a {
+      color: #64B5F6;
+      text-decoration: none;
+    }
+
+    .legal-section a:hover {
+      text-decoration: underline;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-secondary {
+      display: inline-block;
+      padding: 12px 24px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+  </style>
 </body>
 </html>
