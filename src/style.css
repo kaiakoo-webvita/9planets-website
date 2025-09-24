@@ -142,21 +142,6 @@ body {
   height: 200px;
 }
 
-.logo-cutout {
-  width: 300px;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-mask: url('./src/assets/images/logo.png');
-  mask: url('./src/assets/images/logo.png');
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-}
-
 .hero-logo {
   max-width: 300px;
   height: auto;
