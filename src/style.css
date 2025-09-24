@@ -144,23 +144,24 @@ body {
 }
 
 .glass-logo-panel {
-  width: 350px;
-  height: 220px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(25px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
+  width: 200px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .glass-logo-panel:hover {
-  background: rgba(255, 255, 255, 0.12);
-  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -172,24 +173,18 @@ body {
   right: 0;
   bottom: 0;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.05) 100%);
-  border-radius: 20px;
+  border-radius: 25px;
   pointer-events: none;
 }
 
 .hero-logo {
-  max-width: 280px;
+  max-width: 160px;
   height: auto;
-  filter: drop-shadow(0 4px 20px rgba(255, 255, 255, 0.2));
+  filter: drop-shadow(0 4px 15px rgba(255, 255, 255, 0.2));
   transition: all 0.3s ease;
   position: relative;
   z-index: 2;
-  background: transparent;
-  mix-blend-mode: screen;
-}
-
-.glass-logo-panel:hover .hero-logo {
-  filter: drop-shadow(0 6px 25px rgba(255, 255, 255, 0.3));
-  transform: scale(1.02);
+  border-radius: 15px;
 }
 
 .hero-logo {
