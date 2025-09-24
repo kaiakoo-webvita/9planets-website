@@ -138,14 +138,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
-  height: 200px;
+  margin-bottom: 1.5rem;
+  height: 180px;
   position: relative;
 }
 
 .glass-logo-panel {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -156,7 +156,7 @@ body {
   position: relative;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .glass-logo-panel:hover {
@@ -178,7 +178,7 @@ body {
 }
 
 .hero-logo {
-  max-width: 180px;
+  max-width: 190px;
   height: auto;
   filter: drop-shadow(0 4px 15px rgba(255, 255, 255, 0.2));
   transition: all 0.3s ease;
