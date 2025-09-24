@@ -156,7 +156,7 @@ body {
   position: relative;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .glass-logo-panel:hover {
@@ -178,19 +178,15 @@ body {
 }
 
 .hero-logo {
-  max-width: 190px;
-  height: auto;
-  filter: drop-shadow(0 4px 15px rgba(255, 255, 255, 0.2));
-  transition: all 0.3s ease;
-  position: relative;
-  z-index: 2;
-  border-radius: 25px;
-}
-
-.hero-logo {
-  max-width: 300px;
-  height: auto;
-  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+  max-width: 190px !important;
+  height: auto !important;
+  filter: drop-shadow(0 4px 15px rgba(255, 255, 255, 0.2)) !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  z-index: 2 !important;
+  border-radius: 30px !important;
+  overflow: hidden !important;
+  display: block !important;
 }
 
 .hero-subtitle {
@@ -635,10 +631,6 @@ body {
   
   .glass-panel {
     padding: 1.5rem;
-  }
-  
-  .hero-logo {
-    max-width: 250px;
   }
   
   .artists-grid,
