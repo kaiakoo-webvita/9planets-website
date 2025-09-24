@@ -8,262 +8,175 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/style.css">
 </head>
-<body>
-  <div id="app">
-    <!-- Background Video -->
-    <video class="background-video" autoplay muted loop playsinline>
-      <source src="/src/assets/videos/background.mp4" type="video/mp4">
-      <div class="video-fallback"></div>
-    </video>
+<body style="margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #0f0f23 0%, #1a1a3a 100%); min-height: 100vh; color: white; overflow-x: hidden;">
+  
+  <!-- Background Video -->
+  <video style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;" autoplay muted loop playsinline>
+    <source src="/src/assets/videos/background.mp4" type="video/mp4">
+  </video>
 
-    <!-- Navigation -->
-    <nav class="glass-nav">
-      <div class="nav-container">
-        <div class="logo">
-          <a href="/">9Planets</a>
-        </div>
-        <ul class="nav-menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/#about">Über uns</a></li>
-          <li><a href="/#artists">Künstler</a></li>
-          <li><a href="/#releases">Releases</a></li>
-          <li><a href="/#contact">Kontakt</a></li>
-        </ul>
+  <!-- Navigation -->
+  <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;">
+      <div>
+        <a href="/" style="color: white; text-decoration: none; font-weight: 600; font-size: 1.5rem;">9Planets</a>
       </div>
-    </nav>
+      <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 2rem;">
+        <li><a href="/" style="color: white; text-decoration: none; transition: opacity 0.3s;">Home</a></li>
+        <li><a href="/#about" style="color: white; text-decoration: none; transition: opacity 0.3s;">Über uns</a></li>
+        <li><a href="/#artists" style="color: white; text-decoration: none; transition: opacity 0.3s;">Künstler</a></li>
+        <li><a href="/#releases" style="color: white; text-decoration: none; transition: opacity 0.3s;">Releases</a></li>
+        <li><a href="/#contact" style="color: white; text-decoration: none; transition: opacity 0.3s;">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Main Content -->
-    <main class="legal-page">
-      <div class="container">
-        <div class="glass-panel">
-          <h1>Datenschutzerklärung</h1>
-          <p class="legal-date">(Stand: 19.09.2025)</p>
+  <!-- Main Content -->
+  <main style="margin-top: 100px; padding: 2rem; min-height: calc(100vh - 200px);">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.2); padding: 3rem; text-align: center;">
+        
+        <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; font-weight: 700;">Datenschutzerklärung</h1>
+        <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 2rem; font-style: italic;">(Stand: 19.09.2025)</p>
+        
+        <div style="text-align: left; space-y: 1rem;">
           
-          <section class="legal-section">
-            <h2>1. Verantwortlicher</h2>
-            <p>
+          <div style="margin-bottom: 1rem;">
+            <h2 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">1. Verantwortlicher</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0 0 0.5rem 0;">
               9Planets – Independent Music Label (freischaffender Künstler (Freiberufler))<br>
               Vertretungsberechtigt: Michael H. Boehm<br>
               Im Vogelgesang 43, 67346 Speyer, Deutschland<br>
-              E-Mail: <a href="mailto:mboehm63@gmail.com">mboehm63@gmail.com</a><br>
+              E-Mail: <a href="mailto:mboehm63@gmail.com" style="color: #64B5F6; text-decoration: none;">mboehm63@gmail.com</a><br>
               (Art. 13 DSGVO)
             </p>
-          </section>
+          </div>
 
-          <section class="legal-section">
-            <h2>2. Zwecke, Datenkategorien, Rechtsgrundlagen (Kurzüberblick)</h2>
-            <p>
+          <div style="margin-bottom: 1rem;">
+            <h2 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">2. Zwecke, Datenkategorien, Rechtsgrundlagen (Kurzüberblick)</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0 0 0.5rem 0;">
               <strong>Webseitenbetrieb & Sicherheit</strong> (Server-Logs: IP-Adresse, Zeitstempel, URL, Referrer, User-Agent) → Art. 6 Abs. 1 f DSGVO (berechtigtes Interesse an stabiler, sicherer Bereitstellung).
             </p>
-            <p>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0 0 0.5rem 0;">
               <strong>Kommunikation</strong> (E-Mails/Formulare: Absenderdaten, Inhalte) → Art. 6 Abs. 1 b DSGVO (Vertrag/Anbahnung) oder Art. 6 Abs. 1 f DSGVO.
             </p>
-            <p>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0 0 0.5rem 0;">
               <strong>Einwilligungspflichtige Technologien</strong> (z. B. Analytics, Marketing-Tags, Medien-Embeds) → § 25 Abs. 1 TDDDG (Zugriff/Speicherung auf dem Endgerät) + Art. 6 Abs. 1 a DSGVO (Verarbeitung).
             </p>
-            <p>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
               <strong>Technisch notwendige Cookies</strong> → § 25 Abs. 2 TDDDG (keine Einwilligung erforderlich).
             </p>
-          </section>
+          </div>
 
-          <section class="legal-section">
-            <h2>3. Hosting / Content Delivery</h2>
-            <p>
+          <div style="margin-bottom: 1rem;">
+            <h2 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">3. Hosting / Content Delivery</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0 0 0.5rem 0;">
               Wir hosten diese Website bei Netlify (Sitzland: USA). Beim Aufruf fallen Verbindungsdaten (s. o.) an, die zur Abwehr von Angriffen und zur Sicherstellung des Betriebs kurzfristig in Logfiles gespeichert werden → Art. 6 Abs. 1 f DSGVO.
             </p>
-            <p>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
               <strong>Drittlandübermittlung:</strong> Bei Anbietern außerhalb der EU/EWR erfolgt die Übermittlung auf Basis eines Angemessenheitsbeschlusses (z. B. EU-US Data Privacy Framework) oder Standardvertragsklauseln (SCCs), sofern kein DPF-Beitritt besteht.
             </p>
-          </section>
+          </div>
 
-          <section class="legal-section">
-            <h2>4. Einwilligungen / Consent-Management</h2>
-            <p>
+          <div style="margin-bottom: 1rem;">
+            <h2 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">4. Einwilligungen / Consent-Management</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
               Nicht-essentielle Dienste laden wir erst nach deiner Einwilligung. Du kannst deine Entscheidung jederzeit widerrufen. Rechtsgrundlagen: § 25 TDDDG (Endgerät) und Art. 6 Abs. 1 a DSGVO (Verarbeitung).
             </p>
-          </section>
+          </div>
 
-          <section class="legal-section">
-            <h2>5. Kontaktaufnahme</h2>
-            <p>
+          <div style="margin-bottom: 1rem;">
+            <h2 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">5. Kontaktaufnahme</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
               Bei Kontakt per E-Mail/Formular verarbeiten wir die Angaben zur Bearbeitung und Anschlussfragen. Löschung mit Erledigung, sofern keine Aufbewahrungspflichten entgegenstehen → Art. 6 Abs. 1 b/f DSGVO.
             </p>
-          </section>
+          </div>
 
-          <section class="legal-section">
-            <h2>6. Eingebettete Inhalte (YouTube/Spotify/SoundCloud/Bandcamp)</h2>
-            <p>
+          <div style="margin-bottom: 1rem;">
+            <h2 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">6. Eingebettete Inhalte (YouTube/Spotify/SoundCloud/Bandcamp)</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
               Zum Schutz deiner Daten nutzen wir eine 2-Klick-Lösung. Erst nach aktiver Freigabe werden Inhalte geladen; dabei können Anbieter Cookies/IDs setzen und personenbezogene Daten (inkl. IP-Adresse) verarbeiten → § 25 TDDDG / Art. 6 Abs. 1 a DSGVO.
             </p>
-          </section>
+          </div>
 
-          <section class="legal-section">
-            <h2>7. Schriftarten (Fonts)</h2>
-            <p>
+          <div style="margin-bottom: 1rem;">
+            <h2 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">7. Schriftarten (Fonts)</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
               Schriften werden lokal eingebunden. Es findet kein Abruf von Drittservern (z. B. Google) statt.
             </p>
-          </section>
+          </div>
 
-          <section class="legal-section">
-            <h2>8. Speicherdauer</h2>
-            <p>
+          <div style="margin-bottom: 1rem;">
+            <h2 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">8. Speicherdauer</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0 0 0.5rem 0;">
               Wir löschen personenbezogene Daten, sobald der Zweck entfällt und keine gesetzlichen Pflichten entgegenstehen. Typische Fristen:
             </p>
-            <ul>
-              <li>Server-Logs: 7–14 Tage (Sicherheitszwecke)</li>
-              <li>Kontaktanfragen: 6–12 Monate</li>
-              <li>Einwilligungsprotokolle: 24 Monate (Nachweis der Einwilligung)</li>
+            <ul style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0; padding-left: 1.5rem;">
+              <li style="margin-bottom: 0.25rem;">Server-Logs: 7–14 Tage (Sicherheitszwecke)</li>
+              <li style="margin-bottom: 0.25rem;">Kontaktanfragen: 6–12 Monate</li>
+              <li style="margin-bottom: 0.25rem;">Einwilligungsprotokolle: 24 Monate (Nachweis der Einwilligung)</li>
             </ul>
-          </section>
+          </div>
 
-          <section class="legal-section">
-            <h2>9. Deine Rechte</h2>
-            <p>
+          <div style="margin-bottom: 1rem;">
+            <h2 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">9. Deine Rechte</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0 0 0.5rem 0;">
               Du hast Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit sowie Widerspruch gegen Verarbeitungen auf Grundlage von Art. 6 Abs. 1 e/f DSGVO. Außerdem das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde (Art. 15–21, 77 DSGVO).
             </p>
-            <p>
-              Für Widerrufe von Einwilligungen oder andere Anfragen schreibe an: <a href="mailto:mboehm63@gmail.com">mboehm63@gmail.com</a>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
+              Für Widerrufe von Einwilligungen oder andere Anfragen schreibe an: <a href="mailto:mboehm63@gmail.com" style="color: #64B5F6; text-decoration: none;">mboehm63@gmail.com</a>
             </p>
-          </section>
+          </div>
 
-          <section class="legal-section">
-            <h2>10. Auftragsverarbeitung</h2>
-            <p>
+          <div style="margin-bottom: 1rem;">
+            <h2 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">10. Auftragsverarbeitung</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
               Mit Dienstleistern (z. B. Hosting, E-Mail, Newsletter, Analytics, Zahlungsdienste, Support-Tools) schließen wir Verträge zur Auftragsverarbeitung (Art. 28 DSGVO).
             </p>
-          </section>
+          </div>
 
-          <section class="legal-section">
-            <h2>11. Datenschutzbeauftragter</h2>
-            <p>
+          <div style="margin-bottom: 1rem;">
+            <h2 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">11. Datenschutzbeauftragter</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
               Nach aktuellem Stand ist kein Datenschutzbeauftragter benannt. Eine Benennung ist nur erforderlich, wenn die gesetzlichen Voraussetzungen (Art. 37 DSGVO, § 38 BDSG) vorliegen.
             </p>
-          </section>
+          </div>
 
-          <section class="legal-section">
-            <h2>12. Sicherheit</h2>
-            <p>
+          <div style="margin-bottom: 1rem;">
+            <h2 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">12. Sicherheit</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
               TLS-Verschlüsselung, Härtung von Server/Frameworks, Least-Privilege-Zugriffe, regelmäßige Updates/Backups.
             </p>
-          </section>
-
-          <div class="back-link">
-            <a href="/" class="btn-secondary">← Zurück zur Website</a>
           </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.2);">
+          <a href="/" style="display: inline-block; padding: 0.75rem 1.5rem; background: rgba(255, 255, 255, 0.1); color: white; text-decoration: none; border-radius: 25px; border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease; backdrop-filter: blur(10px);">
+            ← Zurück zur Website
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 2rem 0; text-align: center;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <span style="font-weight: 600;">9Planets - Sound Beyond Gravity</span>
+        <div style="display: flex; gap: 2rem;">
+          <a href="/impressum.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">Impressum</a>
+          <a href="/datenschutz.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">Datenschutz</a>
         </div>
       </div>
-    </main>
+      <p style="color: rgba(255, 255, 255, 0.6); margin: 0;">
+        &copy; 2025 9Planets - Sound Beyond Gravity
+      </p>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="footer glass-panel">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <span>9Planets - Sound Beyond Gravity</span>
-          </div>
-          <div class="footer-links">
-            <a href="impressum.html">Impressum</a>
-            <a href="datenschutz.html">Datenschutz</a>
-          </div>
-        </div>
-        <p class="footer-copyright">
-          &copy; 2025 9Planets - Sound Beyond Gravity
-        </p>
-      </div>
-    </footer>
-  </div>
-
-  <style>
-    .legal-page {
-      margin-top: 100px;
-      padding: 40px 20px;
-      min-height: calc(100vh - 200px);
-    }
-
-    .legal-page h1 {
-      color: white;
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      text-align: center;
-    }
-
-    .legal-date {
-      color: rgba(255, 255, 255, 0.7);
-      text-align: center;
-      margin-bottom: 40px;
-      font-style: italic;
-    }
-
-    .legal-section {
-      margin-bottom: 8px;
-    }
-
-    .legal-section h2 {
-      color: white;
-      font-size: 1.4rem;
-      margin-bottom: 8px;
-      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-      padding-bottom: 4px;
-    }
-
-    .legal-section h3 {
-      color: rgba(255, 255, 255, 0.9);
-      font-size: 1.2rem;
-      margin-bottom: 6px;
-      margin-top: 12px;
-    }
-
-    .legal-section p {
-      color: rgba(255, 255, 255, 0.9);
-      line-height: 1.4;
-      margin-bottom: 8px;
-    }
-
-    .legal-section ul {
-      color: rgba(255, 255, 255, 0.9);
-      line-height: 1.4;
-      margin-bottom: 8px;
-      padding-left: 20px;
-    }
-
-    .legal-section li {
-      margin-bottom: 3px;
-    }
-
-    .legal-section a {
-      color: #64B5F6;
-      text-decoration: none;
-    }
-
-    .legal-section a:hover {
-      text-decoration: underline;
-    }
-
-    .back-link {
-      text-align: center;
-      margin-top: 40px;
-      padding-top: 30px;
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .btn-secondary {
-      display: inline-block;
-      padding: 12px 24px;
-      background: rgba(255, 255, 255, 0.1);
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      transition: all 0.3s ease;
-      backdrop-filter: blur(10px);
-    }
-
-    .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: translateY(-2px);
-    }
-  </style>
 </body>
 </html>
