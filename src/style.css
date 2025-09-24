@@ -184,6 +184,7 @@ body {
   transition: all 0.3s ease;
   position: relative;
   z-index: 2;
+  border-radius: 25px;
 }
 
 .hero-logo {
